@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$(which tee 2>/dev/null)" != "/usr/bin/tee" ]; then
+	echo "Error: install.sh: (brightness_control.sh): 'tee' not found at /usr/bin/tee."
+  exit 1
+fi
+
 script_dir="$PWD/script"
 
 in_bashrc="$(grep "$script_dir" "$HOME/.bashrc" 2>/dev/null)"

@@ -72,8 +72,8 @@ usage() {
 	echo "  -h, --h, -help, --help   Show this help message and exit"
 	echo "  inc                      Increment the screen brightness by 1"
 	echo "  dec                      Decrement the screen brightness by 1"
-	echo "  set <integer(>=0)> Set the brightness to <value>"
-	echo "  change <integer>   Change the brightness by <value>"
+	echo "  set <integer(>=0)>       Set the brightness to <value>"
+	echo "  change <integer>         Change the brightness by <value>"
 }
 
 #main
